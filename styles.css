@@ -1,5 +1,10 @@
 body{
-  padding: 25px;
+	font-family: 'Fascinate Inline';
+        background: linear-gradient(to bottom, #5B2C6F, #2a5298);
+        color: white;
+        margin: 0;
+        padding: 0;
+ 
 }
 .title {
 	color: #592693;
