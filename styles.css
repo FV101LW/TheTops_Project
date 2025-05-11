@@ -1,5 +1,7 @@
 body{
-	font-family: 'Fascinate Inline';
+	font-family: 'Fascinate Inline', system-ui;
+	font-weight: 400;
+	font-style: normal;
         background: linear-gradient(to bottom, #5B2C6F, #2a5298);
         color: white;
         margin: 0;
