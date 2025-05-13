@@ -1,5 +1,5 @@
 body{
-	font-family: 'Fascinate Inline', system-ui;
+	font-family: "Fascinate Inline", system-ui;
 	font-weight: 400;
 	font-style: normal;
         background: linear-gradient(to bottom, #5B2C6F, #2a5298);
@@ -36,9 +36,8 @@ a {
   background-color: #DAA520;
   color: gold;
   border: 2px solid #FFD700;
-  display: flex;
-  justify-content: center; /* Centers horizontally */
-  align-items: center; /* Centers vertically */
-  height: 100vh; /* Full viewport height */
-  margin: 0;
+  display: grid;
+        place-items: center; /* Centers both horizontally and vertically */
+        height: 100vh;
+        margin: 0;
 }
