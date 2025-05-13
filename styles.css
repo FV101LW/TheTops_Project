@@ -17,3 +17,28 @@ h1 {
 a {
    text-align: center;
 }
+
+.button {
+	border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-style: 
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.startButton {
+  background-color: #DAA520;
+  color: gold;
+  border: 2px solid #FFD700;
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  height: 100vh; /* Full viewport height */
+  margin: 0;
+}
