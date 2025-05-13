@@ -1,5 +1,5 @@
 body{
-	font-family: "Fascinate Inline", system-ui;
+	font-family: "Fascinate Inline", system-ui, sans-serif;
 	font-weight: 400;
 	font-style: normal;
         background: linear-gradient(to bottom, #5B2C6F, #2a5298);
@@ -26,7 +26,7 @@ a {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  font-style: 
+  font-style: normal;
   margin: 4px 2px;
   transition-duration: 0.4s;
   cursor: pointer;
@@ -38,6 +38,5 @@ a {
   border: 2px solid #FFD700;
   display: grid;
         place-items: center; /* Centers both horizontally and vertically */
-        height: 100vh;
         margin: 0;
 }
