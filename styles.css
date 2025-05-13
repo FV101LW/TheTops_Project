@@ -39,4 +39,5 @@ a {
   display: grid;
         place-items: center; /* Centers both horizontally and vertically */
         margin: 0;
+	height: 100vh;
 }
