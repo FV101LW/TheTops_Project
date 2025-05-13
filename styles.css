@@ -36,6 +36,9 @@ a {
 }
 
 .startButton {
+  font-family: 'Fascinate Inline', system-ui, sans-serif;
+  font-weight: 400;
+  font-style: normal;
   background-color: #DAA520;
   color: gold;
   border: 2px solid #FFD700;
