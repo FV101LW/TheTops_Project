@@ -102,9 +102,138 @@
         .menu-button:hover {
             animation: flicker 1s infinite;
         }
+
+        <!-- For Top Nav Menu -->
+        .topmenu {
+        position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(0.5, 0, 0.8, 0.6);
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            z-index: 1000;
+      }
+      .topmenu a {
+            color: #87CEEB;
+            text-decoration: none;
+            padding: 14px 16px;
+            font-size: 17px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .topmenu a:hover {
+            color: #ffffff;
+        }
+
+        .topmenu a.active {
+            background-color: cornflowerblue;
+            color: white;
+        }
+
+        .slideshow-container {
+            position: relative;
+            max-width: 100%;
+            margin: 100px auto 0 auto;
+        }
+
+        .mySlides {
+            display: none;
+        }
+
+        .fade {
+            animation: fade 1s;
+        }
+
+        @keyframes fade {  <!-- Apparently these are for the slides -->
+            from { opacity: 0; transform: scale(0.95); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        .text {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            color: white;
+            padding: 16px;
+            border-radius: 3px;
+            font-size: 18px;
+            transition: 0.3s ease;
+            user-select: none;
+        }
+
+        .prev:hover, .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .prev {
+            left: 0;
+        }
+
+        .next {
+            right: 0;
+        }
+
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 5px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .dot:hover, .dot.active {
+            background-color: #717171;
+        }
+
+        footer {
+            background: #592693;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        footer a {
+            color: #87CEEB;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        footer a:hover {
+            color: white;
+        }
+       .center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -100px;
+        margin-left: -200px;
+        }
     </style>
 </head>
 <body>
+    <div class="topmenu">
+    <a href="index.html" class="active">Home</a>
+    <a href="About.html">About Us</a>
+    <a href="shop.html">Shop</a>
+    <a href="userData.html">User Data</a>
+</div>
 
     <div class="menu-container">
         <h1>Welcome to the Casino</h1>
