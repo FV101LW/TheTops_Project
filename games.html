@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casino Themed Main Menu</title>
+    <style>
+        @keyframes fadeIn {  <!-- Fade in intro -->
+          0% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+        /* Basic Reset */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+        }
+
+        /* Background */
+        body {
+            animation: fadeIn 2s ease-in-out;
+            background: linear-gradient(to bottom, #1d1d1d, #2c2c2c);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('https://www.transparenttextures.com/patterns/brick-wall.png');
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        /* Main Menu Container */
+        .menu-container {
+            text-align: center;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 30px 50px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.7);
+        }
+
+        <!-- Title Styling -->
+        h1 {
+            font-size: 3rem;
+            color: #FFD700;
+            text-shadow: 0 0 10px #fff, 0 0 20px #ffd700, 0 0 30px #ffd700;
+            margin-bottom: 40px;
+        }
+
+        <!-- Button Styling -->
+        .menu-button {
+            background: #1E8C5E; /* Green like a casino table */
+            border: 2px solid #FFD700; /* Gold border */
+            color: white;
+            font-size: 1.5rem;
+            padding: 20px 40px;
+            margin: 15px;
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+            text-decoration: none;
+        }
+
+        /* Button Hover Effects */
+        .menu-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
+        }
+
+        /* Glow Effect for Buttons */
+        .menu-button:active {
+            box-shadow: 0 0 30px rgba(255, 215, 0, 1);
+        }
+
+        /* Dice Icon */
+        .dice-icon {
+            font-size: 2rem;
+            margin-right: 10px;
+        }
+
+        /* Card Icon */
+        .card-icon {
+            font-size: 2rem;
+            margin-right: 10px;
+        }
+
+        <!-- Hover animations -->
+        @keyframes flicker {
+            0% { opacity: 0.8; }
+            50% { opacity: 1; }
+            100% { opacity: 0.8; }
+        }
+
+        .menu-button:hover {
+            animation: flicker 1s infinite;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="menu-container">
+        <h1>Welcome to the Casino</h1>
+
+        <a href="#" class="menu-button">
+            <span class="dice-icon">🎲</span> Play Dice
+        </a>
+        <a href="#" class="menu-button">
+            <span class="card-icon">🃏</span> Play Cards
+        </a>
+        <a href="#" class="menu-button">
+            <span class="card-icon">🎰</span> Slot Machines
+        </a>
+        <a href="#" class="menu-button">
+            <span class="dice-icon">💰</span> Jackpot
+        </a>
+    </div>
+
+</body>
+</html>
