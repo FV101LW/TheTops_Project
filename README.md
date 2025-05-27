@@ -1,5 +1,5 @@
-# Algorithms_Finals_Project
-Algorithms Final Project
+# Algorithms_Finals_Project (SCRAPPED)
+Algorithms Final Project (SCRAPPED)
 
 Theme/Idea: Gambling Addiction Simulator (For now) Max what was the name you suggested again.
 
